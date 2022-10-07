@@ -1,6 +1,5 @@
 // apiScript.js
 const API_URL = 'https://icanhazdadjoke.com/';
-const jokeDiv = document.getElementById('jokeContainer');
 
 const fetchJoke = () => {
   const myObject = {
@@ -16,6 +15,7 @@ const fetchJoke = () => {
 };
 
 window.onload = async () => {
+  const jokeDiv = document.getElementById('jokeContainer');
   const joke = await fetchJoke();
   jokeDiv.innerHTML = joke;
 };
