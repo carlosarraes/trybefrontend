@@ -16,6 +16,12 @@ const fetchJoke = () => {
 
 window.onload = async () => {
   const jokeDiv = document.getElementById('jokeContainer');
+  const btn = document.getElementById('btn');
   const joke = await fetchJoke();
   jokeDiv.innerHTML = joke;
+
+  btn.addEventListener('click', async () => {
+    const newJoke = await fetchJoke();
+    jokeDiv.innerHTML = newJoke;
+  });
 };
