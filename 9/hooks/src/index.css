@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  width: 60vw;
+  text-align: center;
+}
+
+:root {
+  --primary: #5e35b1;
+}
+
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.email > div {
+  align-self: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.read {
+  font-weight: normal;
+}
+
+.unread {
+  font-weight: bold;
+}
